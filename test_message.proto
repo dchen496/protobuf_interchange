@@ -1,0 +1,16 @@
+syntax = "proto3";
+
+message TestMessage {
+    int32 a = 1;
+    string b = 2;
+    repeated TestRepeatedA c = 3;
+};
+
+message TestRepeatedA {
+    repeated TestRepeatedB d = 1;
+};
+
+message TestRepeatedB {
+    int32 e = 1;
+    int32 f = 2;
+};
